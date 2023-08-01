@@ -1,0 +1,30 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">   
+        <a class="navbar-brand" href="#">Sistema de Gestión</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" 
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation"
+                (click)="isCollapsed = !isCollapsed"  [attr.aria-expanded]="!isCollapsed"
+                >  <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" [collapse]="isCollapsed" [isAnimated]="true"  id="navbarScroll">
+            
+                <ul class="navbar-nav" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item" routerLinkActive="active">
+                        <a class="nav-link" aria-current="page" routerLink="horasExtras">Registros</a>
+                    </li>
+                    <li class="nav-item" routerLinkActive="active">
+                        <a class="nav-link " aria-current="page" routerLink="areas">Areas</a>
+                    </li>
+                    <li class="nav-item" routerLinkActive="active">
+                        <a class="nav-link" aria-current="page" routerLink="empleado">Empleados</a>
+                    </li>
+                    <li class="nav-item" routerLinkActive="active">
+                        <a class="nav-link" aria-current="page" routerLink="base">Base Insumo</a>
+                    </li>
+                </ul>
+            </div>
+    </div>
+  </nav>
+
+
+ 
